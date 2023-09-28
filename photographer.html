@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Fisheye - photographe </title>
+  </head>
+  <body>
+    <header role="banner">
+      <a href="./index.html" title="Fisheye Home page">
+        <img src="./assets/images/logo.png" class="logo" alt="Fisheye Home page"/>
+      </a>
+    </header>
+    <main id="main">
+      <!-- HEADER-->
+      <section class="photograph-header" aria-label="Profil photographe"></section>
+      <!-- FILTRE -->
+      <section class="section-filter" aria-label="Filtre"></section>
+      <!-- GALLERIE -->
+      <section class="section-gallery" id="section-gallery" aria-label="Gallerie photographe"></section>
+       <!-- LIGTHBOX -->
+      <div class="section-lightbox" id="section-lightbox" aria-hidden="true" aria-label="image closeup view" role='dialog'></div>
+    
+      <!-- BOX -->
+      <aside id="box" aria-label="photographer likes and price"></aside>
+      <!-- MODAL -->
+      <section id="contact-modal" aria-label="Contact me" role='dialog' aria-hidden="true">
+          <div class="modal">
+            <header aria-label="header contact form">
+              <div>
+                <h1 class="form-title">Contactez-moi</h1>
+                <p id="form-name"></p>
+              </div>
+              <button class="close-btn" id="close-btn" title="Close contact form" type="button" aria-label="Close contact form">
+                <i class="fa-solid fa-xmark close-form-icon" id="close-form-icon" alt="Close contact form" onclick="new Modal().closeModal()"></i>
+              </button>
+            </header>
+            <form id="contact-form" action="photographer.html" method="POST">
+              <!-- PRENOM -->
+              <div class="formData" data-error="Vous devez saisir votre prénom." data-error-visible="false">
+                <label for="first-name" id="label-first-name">Prénom</label>
+                <input name="first-name" id="first-name" aria-labelledby="label-first-name" placeholder="Prénom"/>
+              </div>
+              <!-- NOM -->
+              <div class="formData" data-error="Vous devez saisir votre nom." data-error-visible="false">
+                <label for="last-name" id="label-last-name">Nom</label>
+                <input name="last-name" id="last-name" aria-labelledby="label-last-name" placeholder="Nom">
+              </div>
+              <!-- EMAIL -->
+              <div class="formData" data-error="Vous devez saisir un email valide." data-error-visible="false">
+                  <label for="email" id="label-email">Email</label>
+                  <input type="email" name="email" id="email" aria-labelledby="label-email" placeholder="Adresse mail">
+              </div>
+              <!-- MESSAGE -->
+              <div class="formData" data-error="Vous devez saisir votre message." data-error-visible="false">
+                  <label for="message" id="label-message">Votre message</label>
+                  <textarea name="message" id="message" aria-labelledby="label-message" cols="25" rows="6" placeholder="Saisissez votre message"></textarea>
+              </div>
+              <button type="submit" class="contact-submit" title="Send" aria-label="Send">Envoyer</button>
+            </form>
+          </div>
+      </section>
+    </main>
+   
+    <!-- API -->
+    <script src="./scripts/api/Api.js"></script>
+    <!-- Models -->
+    <script src="./scripts/models/DatasPhotographer.js"></script>
+    <script src="./scripts/models/DatasMedia.js"></script>
+    <!-- Pages -->
+    <!-- <script src="./scripts/pages/Home.js"></script> -->
+    <script src="./scripts/pages/Profil.js"></script>
+    <script src="./scripts/pages/Form.js"></script>
+    <script src="./scripts/pages/PhotographerPage.js"></script>
+    <script src="./scripts/pages/Filter.js"></script>
+    <script src="./scripts/pages/Gallery.js"></script>
+    <script src="./scripts/pages/LightBox.js"></script>
+    <!-- Factories -->
+    <script src="./scripts/factories/MediaFactory.js"></script>
+    <script src="./scripts/factories/Likes.js"></script>
+    <!-- Utils -->
+    <script src="./scripts/utils/Modal.js"></script>
+  </body>
+</html>

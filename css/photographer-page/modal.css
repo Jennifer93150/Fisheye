@@ -1,0 +1,41 @@
+/****** MODALE *****/
+#contact-modal {
+    background-color: rgba(148, 149, 162, 0.4);
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+.modal {
+    background-color: #DB8876;
+    border-radius: 10px;
+    margin: 5% auto;
+    max-width: 600px;
+    overflow: hidden;
+    padding: 35px;
+    position: relative;
+    width: 80%;
+}
+.modal header {
+    justify-content: space-between;
+    width: 100%;
+}
+.modal .close-btn{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 50px;
+}
+.modal header img {
+    cursor: pointer;
+}
+.form-title, .modal header p {
+    color: black;
+    font-size: 55px;
+    font-weight: normal;
+    margin: 0;
+}

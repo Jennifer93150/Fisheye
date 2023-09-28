@@ -1,0 +1,74 @@
+/****** HEADER *****/
+.photograph-header {
+    background-color: #FAFAFA;
+    margin: 0 100px;
+    padding: 50px;
+}
+.photograph-header article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.photograph-header article h1 {
+    color: #D3573C;
+    font-size: 56px;
+    font-weight: normal;
+    margin: 0;
+}
+.photograph-header article span {
+    color: #901C1C;
+    font-size: 20px;
+    line-height: 60px;
+}
+.photograph-header article p {
+    font-size: 15px;
+}
+.photograph-header article .contact-button {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 11px;
+    width: 170px;
+    height: 70px;
+    border: none;
+    background-color: #901C1C;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.photograph-header article img{
+    border-radius: 100px;
+    height: 200px;
+    object-fit: cover;
+    width: 200px;
+}
+@media screen and (max-width: 1240px) { 
+   
+}
+@media screen and (max-width: 1024px) {
+    .photograph-header article h1 {
+        font-size: 37px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .photograph-header {
+        flex-wrap: nowrap;
+        margin: 30px 50px;
+        padding: 28px;
+    }
+    .photograph-header article .contact-button {
+        font-size: 15px;
+        margin: 10px;
+        height: 50px;
+        width: 150px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .photograph-header {
+        flex-wrap: wrap;
+        margin: 0 20px;
+    }
+    .photograph-header article .contact-button {    
+        order: 3;
+        margin: 30px;
+    }
+}

@@ -1,0 +1,15 @@
+#box {
+    background: #db8876;
+    border-radius: 5px;
+    bottom: 0;
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    height: 70px;
+    padding: 0 25px;
+    position: fixed;
+        right: 30px;
+    width: 300px;
+}

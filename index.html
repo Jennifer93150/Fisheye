@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+    <title>Fisheye - Accueil</title>
+  </head>
+  <body>
+    <!-- BANNIERE -->
+    <header role="banner">
+      <a aria-label="Logo de Fisheye - Page d'accueil" href="./index.html" title="Page d'accueil">
+        <img src="./assets/images/logo.png" alt="Fisheye Home page" class="logo" />
+      </a>
+      <h1>Nos photographes</h1>
+    </header>
+    <main id="main">
+      <section aria-label="photographes" class="photographer_section" id="photographer_section"></section>
+    </main>
+    <!-- Api -->
+    <script src="./scripts/api/Api.js"></script>
+    <!-- Models -->
+    <script src="./scripts/models/DatasPhotographer.js"></script>
+    <script src="./scripts/models/DatasMedia.js"></script>
+    <!-- Factories -->
+    <script src="./scripts/factories/Photographer.js"></script>
+    <!-- Pages -->
+    <script src="./scripts/pages/Home.js"></script>
+</body>
+</html>

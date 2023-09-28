@@ -1,0 +1,106 @@
+/****** GALLERIE *****/
+.section-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 100px;
+    padding-bottom: 30px;
+}
+.section-gallery article a img, .section-gallery article a video{
+    border-radius: 5px;
+    height: 300px;
+    object-fit: cover;
+    width: 350px;
+}
+.section-gallery article div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-gallery article p{
+    color: #901C1C;
+    flex: 1;
+}
+.section-gallery article span{
+    color: #901C1C;
+    margin-right: 10px;
+    
+}
+.section-gallery article button{
+    background: none;
+    border: none;
+}
+.section-gallery article i{
+    color: #901C1C;
+    font-size: 15px;
+}
+@media screen and (max-width: 1265px) {
+    .section-gallery article a img, .section-gallery article a video{
+        height: 300px;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 1120px) {
+    .section-gallery article a img, .section-gallery article a video{
+        height: 270px;
+        width: 270px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .section-gallery article a img, .section-gallery article a video{
+        height: 250px;
+        width: 250px;
+    }
+}
+@media screen and (max-width: 970px) {
+    .section-gallery article a img, .section-gallery article a video{
+        height: 230px;
+        width: 230px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .section-gallery article a img, .section-gallery article a video{
+        height: 320px;
+        width: 320px;
+    }
+}
+@media screen and (max-width: 875px) {
+    .section-gallery article a img, .section-gallery article a video{
+        height: 280px;
+        width: 280px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section-gallery {
+        margin: 30px 50px;
+    }
+    .section-gallery article a img, .section-gallery article a video{
+        height: 300px;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 715px) {
+    .section-gallery article a img, .section-gallery article a video{
+        height: 250px;
+        width: 250px;
+    }
+}
+@media screen and (max-width: 615px) {
+    .section-gallery {
+        justify-content: center;
+    }
+    .section-gallery article a img, .section-gallery article a video{
+        height: 450px;
+        width: 450px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .section-gallery {
+        justify-content: center;
+        margin: 30px 0px;
+    }
+    .section-gallery article a img, .section-gallery article a video{
+        height: 380px;
+        width: 380px;
+    }
+}
